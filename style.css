@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "GFS Didot", serif;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
+    gap: 20px; /* Espaço entre as colunas */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+body, html{
+   margin: 0;
+   background-color: #271300;
+}
+
+.background{
+background-size: cover;
+background-position: center;
+width: 100%;
+min-height: 100%;
+height: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.cabecalho-link{
+    display: flex;
+    gap: 3rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.cabecalho-link a{
+    color: #fff;
+    font-size: 12px;
+}
+
+.cabecalho-link a:hover{
+    color: #E46F40;
+    transition: 0.3s all;
+}
+.friend{
+    height: 25px;
+    width: 30px;
+}
+
+.logo{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid #E46F40;
+    color: #E46F40;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.textoQuali{
+    text-align: justify;
+    text-align-last: center;
+    
+}
+.textoQualificacao{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+}
+
+button{
+    color: #E46F40;
+    background: transparent;
+    border: solid 1px #E46F40;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    width: 150px;
+    cursor: pointer;
+}
+
+button:hover{
+    color: #fff;
+    background: #E46F40;
+    transition: 0.5s;    
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: left; /* Adicionado para centralizar horizontalmente */
+    min-height: 80vh; /* Para garantir que a div ocupe toda a altura da tela */
+    padding: 0 20px; /* Ajuste do espaçamento horizontal */
+    box-sizing: border-box; /* Garante que padding seja incluído na largura/altura */
+}
+
+.text h3{
+    color: #E46F40;
+    font-size: 35px;
+
+}
+.filippi{
+    color: #E46F40;
+}
+.languages{
+    text-align: center;
+    color: #fff;
+}
+i{
+    color: #E46F40;
+    font-size: 4vh;
+    padding: 10px;
+}
+.formacao{
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.back{
+    color: #E46F40;
+}
+
+.text h1{
+    color: #E46F40;
+    font-size: 60px;
+
+}
+
+.text h2{
+    color: #fff;
+}
+
+.redes-sociais a{
+    color: #E46F40;
+    padding: 10px;
+    margin-top: 5px;
+    
+}
+
+/*
+botao Tema
+*/
+/* Estilo para telas pequenas */
+@media screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0; /* Ajuste conforme necessário */
+    }
+    
+    .imagem {
+        margin-left: 0; /* Centralizar imagem quando a tela for pequena */
+        margin-top: 20px; /* Adicionar espaço entre texto e imagem */
+    }
+    
+    .text {
+        text-align: center; /* Centralizar texto quando a tela for pequena */
+    }
+    
+    .cabecalho-link {
+        flex-direction: column;
+        gap: 1rem; 
+    }
+    
+    .logo {
+        margin-bottom: 20px; /* Adicionar espaço abaixo do logo */
+    }
+    
+    button {
+        width: auto; /* Permitir que o botão se ajuste ao conteúdo */
+    }
+
+    .contrato {
+        width: 100%; /* Ajustar a largura do botão para ocupar a largura total */
+        margin: 10px 0; /* Adicionar margem superior e inferior para espaçamento */
+    }
+
+}
+
+/* Estilo para telas muito pequenas */
+@media screen and (max-width: 480px) {
+    .text h1 {
+        font-size: 40px; /* Reduzir o tamanho do título para telas muito pequenas */
+    }
+
+   
+}
+
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sobre{
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left; /* Adicionado para centralizar horizontalmente */
+    min-height: 80vh; /* Para garantir que a div ocupe toda a altura da tela */
+    padding: 0 20px; /* Ajuste do espaçamento horizontal */
+    box-sizing: border-box; 
+}
+
+.projetos{
+    margin-top: 4%;
+    margin-left: 5%;
+    color: white;
+}
+
+.carrosel{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carrosel-container{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carrosel-item{
+    flex: 0 0 100%;
+}
+
+.carrosel-item img {
+    width: 30vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.carrosel-item h3{
+    color: #fff;
+    text-align: center;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.prev-button{
+    left: 10px;
+}
+
+.next-button{
+    right: 10px;
+}
+.log{
+    color: #fff;
+}
+
+
+.sobre-mim{
+    color: #E46F40;
+}
+.sobre-mim:after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+.textomeu{
+    color: #fff;
+}
+.log:after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+/* botao whats*/
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #25D366; /* Cor do botão */
+    color: #fff; /* Cor do ícone */
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Inicialmente oculto */
+    z-index: 1000; /* Garante que o botão esteja acima de outros elementos */
+}
+/* Animação de aparência do botão */
+.whatsapp-btn.show {
+    display: block;
+}
+
+/* Animação de desaparecimento do botão */
+.whatsapp-btn.hide {
+    display: none;
+}
+
+/* Keyframes para animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOutDown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+
+/** texto escrevendo*/
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
